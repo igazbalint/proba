@@ -4,7 +4,7 @@
     <div class="row mb-5 p-5">
 
       <div class="col">
-        <input type="button" value="general" class="w-100">
+        <input type="button" value="general" class="w-100" (click)="generateNumbers(1)" />
       </div>
 
       <div class="col">
@@ -17,7 +17,12 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="area mx-auto"></div>
+        <div class="area mx-auto">
+          <h2>A generalt szamok:</h2>
+          <ul *ngFor="let number of numbers" class="my-2">
+            <li>{{number}}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

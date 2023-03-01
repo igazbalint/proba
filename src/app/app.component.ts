@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'feladat';
+  numbers:any = [];
+  generateNumbers(quantity: number = 10){
+    for(let i = 0; i < quantity; i++){
+    
+      this.numbers.push( Math.floor(Math.random() * (5000 - 3 + 1) + 3))
+     console.log(this.numbers);
+    }
 
-  generateNumbers(quantity: number){}
+  }
    
 
 }
