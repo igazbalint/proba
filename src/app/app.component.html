@@ -4,11 +4,11 @@
     <div class="row mb-5 p-5">
 
       <div class="col">
-        <input type="button" value="general" class="w-100" (click)="generateNumbers(1)" />
+        <input type="button" value="general" class="w-100" (click)="generateNumbers(20)" />
       </div>
 
       <div class="col">
-        <input type="button" value="teszt" class="w-100" [disabled]="!btnpressed">
+        <input type="button" value="teszt" class="w-100" [disabled]="!btnpressed" (click)="countPrimes(numbers)">
       </div>
 
     </div>

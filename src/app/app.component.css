@@ -19,8 +19,8 @@ main{
 }
 
 .area{
-    width: 50rem;
-    height: 50rem;
+    min-width: 50rem;
+    min-height: 50rem;
     border: 1px black solid;
     background-color: white;
 }
