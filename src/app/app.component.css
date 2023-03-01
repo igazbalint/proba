@@ -2,6 +2,12 @@ input{
     font-size: 2rem;
 }
 
+input:disabled{
+    border: 5px solid red;
+    color: white;
+}
+
+
 input:hover{
     font-size: 2.1rem;
     
